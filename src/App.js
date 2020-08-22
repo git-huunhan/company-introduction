@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
   Link
 } from "react-router-dom";
@@ -18,7 +17,6 @@ export default function App() {
       <div className="App">
         <div className="Header">
           <div className="Nav">
-            
             <ul>
               <li>
                 <Link to="/">
@@ -39,20 +37,9 @@ export default function App() {
         </div>
         
         <div className="Body">
-          <Switch>
-            <Route path="/home">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" exact component={About} />
+          <Route path="/contact" exact component={Contact} />
         </div>
       </div>
     </Router>
