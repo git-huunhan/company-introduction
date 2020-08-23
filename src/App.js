@@ -19,7 +19,7 @@ export default function App() {
           <div className="Nav">
             <ul>
               <li>
-                <Link to="/">
+                <Link to="/" id="logo">
                   <img src={logo} alt="logo"/>
                 </Link>
               </li>

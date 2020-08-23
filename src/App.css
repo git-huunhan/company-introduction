@@ -8,9 +8,13 @@
   display: flex;
 }
 
+#logo {
+  margin: 0 400px 0 0;
+}
+
 .Nav img {
   width: 150px;
-  margin: 0 400px 0 0;
+  
 }
 
 .Nav ul {
